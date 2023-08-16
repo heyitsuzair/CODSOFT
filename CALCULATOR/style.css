@@ -1,0 +1,33 @@
+body {
+  font-family: monospace;
+}
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+table {
+  margin: auto;
+}
+input {
+  font-size: 24px;
+  border-radius: 5px;
+  border: 2px solid #4338ca;
+  width: 18.8rem;
+}
+button {
+  color: #4338ca;
+  font-size: 25px;
+  background-color: #a5b4fc;
+  width: 72px;
+  height: 57px;
+  border-radius: 4px;
+  border: none;
+}
+button:active,
+button:focus {
+  border: 3px solid #3730a3;
+}
