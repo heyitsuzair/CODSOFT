@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="modal" id="editModal">
+      <div class="modal-content">
+        <input type="hidden" id="todoId" />
+        <input
+          type="text"
+          class="border-0 border-gray text-lg rounded p-05 outline-0"
+          id="todoText"
+          placeholder="Enter todo value"
+        />
+        <button
+          class="bg-blue-600 rounded h-12 w-8 border-0 text-white"
+          onclick="saveChanges()"
+        >
+          <i class="fa fa-check" aria-hidden="true"></i>
+        </button>
+        <button
+          class="bg-red-600 rounded h-12 w-8 border-0 text-white"
+          onclick="closeEditModal()"
+        >
+          <i class="fa fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+    <section id="section" class="p-3 flex items-center h-screen justify-center">
+      <div class="p-1 box w-96 rounded shadow-2xl">
+        <h1 class="text-left">Todo App</h1>
+        <div id="add-todo-form" class="flex items-center justify-between my-05">
+          <input
+            type="text"
+            class="border-0 border-gray text-lg rounded p-05 outline-0"
+            placeholder="Add your new todo"
+            id="todo-input"
+          />
+          <button
+            class="bg-violet-600 border-0 rounded h-12 text-white fw-900 text-xl"
+            id="add-todo-btn"
+            type="button"
+          >
+            <i class="fa fa-plus" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="todo-items" id="todo-items"></div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,5 +1,5 @@
-let output = document.getElementById("output");
-buttons = document.querySelectorAll("button");
+const output = document.getElementById("output");
+const buttons = document.querySelectorAll("button");
 let outputValue = "";
 for (item of buttons) {
   item.addEventListener("click", (e) => {
